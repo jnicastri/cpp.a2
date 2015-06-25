@@ -1,0 +1,45 @@
+
+Student No : s3407908
+Name: James Nicastri
+Cpt323 Assignment 2 SP3
+
+TO Run Cpp.exe stations.dat myTic.dat myTic.dat
+
+Requirement 1 (10 marks): Class Design Diagram  - 100% implemented
+
+
+Requirement 2 Command-Line Arguments (5 marks)  - 100% implemented
+
+
+Requirement 3 File Input and Output (15 marks)   - 100% implemented
+
+Requirement 4 (5 marks): Main Program Menu - 100% implemented
+
+
+Requirement 5 (25 marks): Implement Core Functionality- 100% implemented
+
+
+Requirement 6 (15 marks): Implement Travel Pass Logic - 100% implemented
+
+
+Requirement 7 (5 marks) Exception classes /Data Validation- 100% implemented
+
+
+Requirement 8 Advanced Task 1 - 0% implemented
+I have defined and used template 'functions' in a couple of places, but didn't see a necessity to use a template 'class'.
+
+Requirement 9 Advanced Task 2 - 0% implemented
+
+
+Requirement 10 Advanced Task 3 - 40% implemented
+Had begun working on implementing this feature (weekly tickets) - classes have been defined, just needed to factor them into the purchasing logic. Ran out of time :(
+
+
+Requirement 11 Advanced Task 4  - 0% implemented
+
+
+Notes on why you used your STL container choices
+I chose to use a map to store my users, travel pass types & stations in. I chose the map for these cases because most of the time I was searching for something based off user input, it is quicker and more efficient to test if the item I'm looking for is in the map by testing if the key matches anything in the map, as opposed to looping through another type of structure. The map also helps avoid duplicate records being put into the collection by key (helpful for all cases - users, stations & travelpass types).
+
+For the storing of purchased travel passes & journeys I chose to use a vector. This decision was made because I need the records I insert to remain in order. I also don't require a key (like the map provides), and in most cases I am looking for the last record in the vector, which can be conveniently accessed via (vector.size() -1).
+
